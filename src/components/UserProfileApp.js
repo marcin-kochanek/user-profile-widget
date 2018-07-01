@@ -47,7 +47,7 @@ export default class UserProfileApp extends React.Component {
       user.isLiked ? user.likes-- : user.likes++;
       user.isLiked = !user.isLiked;
       return newState;
-    })
+    });
   };
   handleAddFollower = () => {
     this.setState(prevState => {
@@ -59,6 +59,17 @@ export default class UserProfileApp extends React.Component {
       return newState;
     }); 
   };
+  handleAddComment = (comment) => {
+    console.log(comment);
+    this.setState(prevState => ({
+        comments: prevState.comments.concat({
+          author: this.state.user.name,
+          authorPhoto: 'x',
+          date: '0d',
+          commentText: comment
+        })
+    }));
+  };
   render() {
     return (
       <div>
@@ -67,9 +78,9 @@ export default class UserProfileApp extends React.Component {
           <UserInfo user={this.state.user} handleAddFollower={this.handleAddFollower} />
         </header>
         <div>
-          <Comments comments={this.state.comments} />
+          <Comments comments={this.state.comments} handleAddComment={this.handleAddComment}/>
         </div>
       </div>
     );
   }
-}
+} 
