@@ -16,7 +16,7 @@ const UserHeader = (props) => (
       </div>
     </section>
     <div>
-      <Icon handleGiveLike={props.handleGiveLike} name='icon-share' />
+      <Icon name='icon-share' />
     </div>
   </div>
 );

@@ -52,8 +52,8 @@ export default class UserProfileApp extends React.Component {
       user.isLiked ? user.iconName = 'icon-heart' : user.iconName = 'icon-heart-filled';
       user.isLiked = !user.isLiked;
       return newState;
-  })
-};
+    })
+  };
   handleAddFollower = () => {
     this.setState(prevState => {
       const newState = Object.assign({}, prevState);
@@ -71,7 +71,10 @@ export default class UserProfileApp extends React.Component {
 
       comments.isCommentsTableHidden = !comments.isCommentsTableHidden;
       return newState;
-  });
+    });
+  };
+  handleShowWindow = () => {
+    alert(window.location.href);
   };
   render() {
     return (
