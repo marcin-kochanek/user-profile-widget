@@ -5,9 +5,8 @@ export default class AddComment extends React.Component {
     e.preventDefault();
 
     const comment = e.target.elements.comment.value.trim();
-
     this.props.handleAddComment(comment);
-
+   
     e.target.elements.comment.value = '';
   }
   render() {

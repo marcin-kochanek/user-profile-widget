@@ -1,0 +1,34 @@
+{
+  "user": {
+    "name": "Harvey Spencer",
+    "city": "New York",
+    "country": "USA",
+    "socialMedia": {
+      "likes": 121,
+      "following": 723,
+      "followers": 4431,
+      "isFollowed": false,
+      "isLiked": false
+    }
+  },
+  "comments": [
+    {
+      "author": "Mike Ross",
+      "authorPhoto": "x",
+      "date": "2018-06-30 17:00:00",
+      "commentText":"Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula."
+    },
+    {
+      "author": "Rachel Zein",
+      "authorPhoto": "x",
+      "date": "2018-06-30 17:00:00",
+      "commentText":"Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula."
+    },
+    {
+      "author": "Louis Litt",
+      "authorPhoto": "x",
+      "date": "2018-06-30 17:00:00",
+      "commentText":"Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula."
+    }
+  ]
+}
