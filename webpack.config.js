@@ -34,7 +34,7 @@ module.exports = {
       loader: 'svg-sprite-loader'
     }, {
       test: /\.json$/,
-      loader: 'json'
+      loader: 'json-loader'
     }]
   },
   devtool: 'cheap-module-eval-source-map',

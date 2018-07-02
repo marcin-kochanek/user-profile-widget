@@ -9,6 +9,14 @@ import Comments from './Comments';
 
 export default class UserProfileApp extends React.Component {
   state = data;
+  // componentDidMount() {
+  //   const path = require('path');
+
+  //   fetch(path.join('/data/data.json'))
+  //     .then(resp => {
+  //       this.setState( resp );
+  //     });
+  // };
   handleGiveLike = () => {
     this.setState(prevState => {
       const newState = Object.assign({}, prevState);
@@ -34,28 +42,15 @@ export default class UserProfileApp extends React.Component {
       this.setState(prevState => ({
         comments: prevState.comments.concat({
           author: this.state.user.name,
-          authorPhoto: 'x',
           date: moment().local().format('YYYY-MM-DD HH:mm:ss'),
           commentText: comment
         })
       }));
     }  
   };
-  componentDidMount() {
-    console.log(data);
-    fetch("http://127.0.0.1:8080/data/data.json")
-      .then(resp => resp.json())
-      .then(resp => {
-        console.log(resp);
-        this.setState(() => (
-          resp
-        ));
-      });
-    console.log(this.state);
-  };
   render() {
     return (
-      <div>
+      <div className='user-profile'>
         <header>
           <UserHeader user={this.state.user} handleGiveLike={this.handleGiveLike}/>
           <UserInfo user={this.state.user} handleAddFollower={this.handleAddFollower} />

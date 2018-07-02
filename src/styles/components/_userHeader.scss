@@ -1,0 +1,15 @@
+.user-header {
+  display: flex;
+
+  &__photo {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%; 
+  }
+
+  &__user-box {
+    display: flex;
+    align-items: center;
+  }
+}
+

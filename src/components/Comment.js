@@ -24,7 +24,7 @@ const Comment = (props) => (
   <div>
     <div>
       <div>
-        <img src={require('../images/HarveySpecter.jpg')} width="50"/>
+        <img src={require('../images/HarveySpecter.png')}/>
       </div>
       <h3>{props.author}</h3>
       <span>{moment(props.date).fromNow(true)}</span>

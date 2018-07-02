@@ -1,3 +1,8 @@
+// colors
+$color-white: #FFF;
+$color-blue: #002C71;
+$color-light-grey: #EBEBEB;
+
 // rwd
 $bp-largest: 81.25em; // 1300px/16px = 81,25
 $bp-large: 68.75em;  // 1100
@@ -5,3 +10,11 @@ $bp-medium: 56.25em;  // 900
 $bp-small: 37.5em;  // 600
 $bp-smallest: 31.25em;  // 500
 $bp-mini: 28.15em;  // 450
+
+// mixins
+@mixin style-box {
+  border: 1px solid $color-light-grey;
+  background: $color-white;
+  box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5);
+  border-radius: 5px;
+}

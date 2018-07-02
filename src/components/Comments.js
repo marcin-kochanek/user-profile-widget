@@ -25,6 +25,7 @@ export default class Comments extends React.Component {
             <Comment
               key={index} 
               author={comment.author}
+              authorPhoto={comment.authorPhoto}
               date={comment.date}
               commentText={comment.commentText}
             />
