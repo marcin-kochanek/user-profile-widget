@@ -55,9 +55,7 @@ export default class UserProfileApp extends React.Component {
           <UserHeader user={this.state.user} handleGiveLike={this.handleGiveLike}/>
           <UserInfo user={this.state.user} handleAddFollower={this.handleAddFollower} />
         </header>
-        <div>
-          <Comments comments={this.state.comments} handleAddComment={this.handleAddComment}/>
-        </div>
+        <Comments comments={this.state.comments} handleAddComment={this.handleAddComment}/>
       </div>
     );
   }

@@ -1,20 +1,24 @@
 import React from 'react';
 
 const UserInfo = (props) => (
-  <section>
-    <div>
-      <h3>{props.user.socialMedia.likes}</h3>
-      <span>Likes</span>
-    </div>
-    <div>
-      <h3>{props.user.socialMedia.following}</h3>
-      <span>Following</span>
-    </div>
-    <div>
-      <h3>{props.user.socialMedia.followers}</h3>
-      <span>Followers</span>
-    </div>
-    <button onClick={props.handleAddFollower}>{props.user.socialMedia.isFollowed ? 'Unfollow' : 'Follow'}</button>
+  <section className='user-info'>
+    <ul className='user-info__media-list'>
+      <li className='user-info__media-list-item'>
+        <h3 className='user-info__number'>{props.user.socialMedia.likes}</h3>
+        <span className='user-info__social-media'>likes</span>
+      </li>
+      <li className='user-info__media-list-item'>
+        <h3 className='user-info__number'>{props.user.socialMedia.following}</h3>
+        <span className='user-info__social-media'>following</span>
+      </li>
+      <li className='user-info__media-list-item'>
+        <h3 className='user-info__number'>{props.user.socialMedia.followers}</h3>
+        <span className='user-info__social-media'>followers</span>
+      </li>
+    </ul>
+    <button className='btn' onClick={props.handleAddFollower}>
+      {props.user.socialMedia.isFollowed ? 'unfollow' : 'follow'}
+    </button>
   </section>
 );
 

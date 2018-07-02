@@ -17,21 +17,17 @@ export default class UserHeader extends React.Component {
   };
   render() {
     return (
-      <div>
-        <section className='user-header'>
-          <img className='user-header__photo' src={require('../images/HarveySpecter.png')}/>
-          <div>
-            <div className='user-header__user-box'>
-              <h2>{this.props.user.name}</h2>
-              <Icon handleGiveLike={this.handleGiveLike} name={this.state.iconHeart} />
-            </div>
-            <h4>{`${this.props.user.city}, ${this.props.user.country}`}</h4>
-          </div>
-        </section>
+      <section className='user-header'>
+        <Icon handleShowWindow={this.handleShowWindow} name='icon-share' />
+        <img className='user-header__photo' src={require('../images/HarveySpecter.png')}/>
         <div>
-          <Icon handleShowWindow={this.handleShowWindow} name='icon-share' />
+          <div className='user-header__box'>
+            <h2 className='user-header__name'>{this.props.user.name}</h2>
+            <Icon handleGiveLike={this.handleGiveLike} name={this.state.iconHeart} />
+          </div>
+          <h4 className='user-header__city'>{`${this.props.user.city}, ${this.props.user.country}`}</h4>
         </div>
-      </div>
+      </section>
     );
   }
 }
