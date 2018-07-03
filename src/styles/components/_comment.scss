@@ -45,5 +45,11 @@
     color: $color-grey;
     font-weight: 500;
     margin: 0 5rem 0 5.1rem;
+    word-break: break-word;
+    text-align: left;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 1.6rem;
+    }
   }
 }

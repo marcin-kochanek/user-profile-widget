@@ -1,8 +1,12 @@
 .user-profile {
   position: relative;
-  width: 50rem;
-  height: 83.5%;
+  width: $width-50;
+  height: calc(100% - 5rem);
   @include style-box;
+
+  @media only screen and (max-width: $bp-small) {
+    width: $width-32;
+  }
 
   &::before {
     content: "";
@@ -14,20 +18,29 @@
   }
 
   header {
-    width: 46.6rem;
+    width: $width-46;
     position: relative;
     top: -6rem;
     transform: translateX(-50%);
     left: 50%;
     @include style-box;
+
+    @media only screen and (max-width: $bp-small) {
+      width: $width-28;
+    }
   }
 
   main {
-    width: 46.6rem;
+    width: $width-46;
     position: relative;
     top: -5rem;
     transform: translateX(-50%);
     left: 50%;  
     @include style-box;
+    border-radius: 5px 5px 0 0;
+
+    @media only screen and (max-width: $bp-small) {
+      width: $width-28;
+    }
   }
 }

@@ -1,18 +1,21 @@
 // colors
 $color-white: #FFF;
+$color-dark-white: #F3F3F3;
 $color-blue: #002C71;
 $color-light-blue: #8298B9;
-$color-light-blue-opacity: rgba(130, 152, 185, 0.12);
+$color-very-light-blue: #D5DAE3;
 $color-grey: #444;
-$color-grey-opacity: rgba(151, 151, 151, 0.1);
 $color-very-light-grey: #EBEBEB;
 $color-light-grey: #D8D8D8;
 $color-orange: #FFA640;
 
+//width
+$width-50: 50rem;
+$width-46: 46.6rem;
+$width-32: 32rem;
+$width-28: 28.3rem;
+
 // rwd
-$bp-largest: 81.25em; // 1300px/16px = 81,25
-$bp-large: 68.75em;  // 1100
-$bp-medium: 56.25em;  // 900
 $bp-small: 37.5em;  // 600
 $bp-smallest: 31.25em;  // 500
 $bp-mini: 28.15em;  // 450

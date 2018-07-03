@@ -1,5 +1,11 @@
 .comments-wrapper {
   margin-right: 6px;
+  height: 51rem;
+}
+
+.comments-no-wrapper {
+  margin-right: 6px;
+  height: 0;
 }
 
 .comments-box {
@@ -12,17 +18,12 @@
 
   &::-webkit-scrollbar-thumb {
     border-radius: 100px;
-    background-color: $color-light-blue-opacity;
+    background-color: $color-very-light-blue;
   }
   
-  &::-webkit-scrollbar-track-piece {
-      border-radius: 100px;
-      background-color: #D3D3D3;
-      opacity: 0.3;
-  }
   &::-webkit-scrollbar-track {
       border-radius: 100px;
-      background-color: #D3D3D3;
-      opacity: 0.3;
+      background-color: $color-dark-white;
+      opacity: 0.1;
   }
 }

@@ -20,7 +20,7 @@ export default class UserHeader extends React.Component {
       <section className='user-header'>
         <Icon handleShowWindow={this.handleShowWindow} name='icon-share' />
         <img className='user-header__photo' src={require('../images/HarveySpecter.png')}/>
-        <div>
+        <div className='user-header__wrapper'>
           <div className='user-header__box'>
             <h2 className='user-header__name'>{this.props.user.name}</h2>
             <Icon handleGiveLike={this.handleGiveLike} name={this.state.iconHeart} />

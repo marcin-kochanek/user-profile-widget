@@ -4,16 +4,36 @@
   padding: 2rem 2rem 0;
   position: relative;
 
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
   &__photo {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
     margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      position: absolute;
+      top: -5rem;
+    }
+  }
+
+  &__wrapper {
+    @media only screen and (max-width: $bp-small) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2rem;
+    }
   }
 
   &__box {
     display: flex;
     align-items: center;
+
+    position: relative;
   }
 
   &__name {
@@ -21,7 +41,6 @@
     line-height: 2.2rem;
     color: $color-blue;
     font-weight: 600;
-    margin-right: 1rem;
   }
 
   &__city {

@@ -6,17 +6,10 @@ import data from '../../public/data/data.json';
 import UserHeader from './UserHeader';
 import UserInfo from './UserInfo';
 import Comments from './Comments';
+import AddComment from './AddComment';
 
 export default class UserProfileApp extends React.Component {
   state = data;
-  // componentDidMount() {
-  //   const path = require('path');
-
-  //   fetch(path.join('/data/data.json'))
-  //     .then(resp => {
-  //       this.setState( resp );
-  //     });
-  // };
   handleGiveLike = () => {
     this.setState(prevState => {
       const newState = Object.assign({}, prevState);
@@ -56,6 +49,10 @@ export default class UserProfileApp extends React.Component {
           <UserInfo user={this.state.user} handleAddFollower={this.handleAddFollower} />
         </header>
         <Comments comments={this.state.comments} handleAddComment={this.handleAddComment}/>
+        <AddComment 
+          comments={this.state.comments}
+          handleAddComment={this.handleAddComment}
+        />
       </div>
     );
   }

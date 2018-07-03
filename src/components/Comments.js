@@ -2,7 +2,6 @@ import React from 'react';
 
 import HideComments from './HideComments';
 import Comment from './Comment';
-import AddComment from './AddComment';
 
 export default class Comments extends React.Component {
   state = {
@@ -35,10 +34,6 @@ export default class Comments extends React.Component {
             }
           </div>
         </div>
-        <AddComment 
-          comments={this.props.comments}
-          handleAddComment={this.props.handleAddComment}
-        />
       </main>
     );
   }
