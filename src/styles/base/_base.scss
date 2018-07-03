@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -21,7 +22,6 @@ button {
   cursor: pointer;
 }
 
-button:disabled {
-  cursor: none;
-  //background: darken($color: , $amount: 0)
+::-webkit-input-placeholder {
+  color: $color-light-blue;
 }

@@ -19,15 +19,31 @@
 }
 
 .btn {
-  background: $color-orange;
-  width: 20rem;
-  font-size: 1.4rem;
-  letter-spacing: 3.2px;
-  color: $color-white;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 1.3rem;
   border: none;
   outline: none;
-  border-radius: 100px;
+
+  &--action {
+    background: $color-orange;
+    width: 20rem;
+    font-size: 1.4rem;
+    letter-spacing: 3.2px;
+    color: $color-white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.3rem;
+    border-radius: 100px;
+  }
+
+  &--link {
+    background: $color-white;
+    color: $color-orange;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    border-bottom: 1px solid $color-orange;
+    margin: 2.5rem 0 2.5rem 2rem;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
 }

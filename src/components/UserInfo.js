@@ -16,7 +16,7 @@ const UserInfo = (props) => (
         <span className='user-info__social-media'>followers</span>
       </li>
     </ul>
-    <button className='btn' onClick={props.handleAddFollower}>
+    <button className='btn btn--action' onClick={props.handleAddFollower}>
       {props.user.socialMedia.isFollowed ? 'unfollow' : 'follow'}
     </button>
   </section>

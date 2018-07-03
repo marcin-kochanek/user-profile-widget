@@ -21,15 +21,13 @@ moment.updateLocale('en', {
 });
 
 const Comment = (props) => (
-  <div>
-    <div>
-      <div>
-        <img src={require('../images/HarveySpecter.png')}/>
-      </div>
-      <h3>{props.author}</h3>
-      <span>{moment(props.date).fromNow(true)}</span>
+  <div className='user-comment'>
+    <div className='user-comment__header'>
+      <img className='user-comment__photo' src={require('../images/HarveySpecter.png')}/>
+      <h3 className='user-comment__name'>{props.author}</h3>
+      <span className='user-comment__date'>{moment(props.date).fromNow(true)}</span>
     </div>
-    <p>{props.commentText}</p>
+    <p className='user-comment__text'>{props.commentText}</p>
   </div>
 );
 

@@ -2,7 +2,11 @@
 $color-white: #FFF;
 $color-blue: #002C71;
 $color-light-blue: #8298B9;
-$color-light-grey: #EBEBEB;
+$color-light-blue-opacity: rgba(130, 152, 185, 0.12);
+$color-grey: #444;
+$color-grey-opacity: rgba(151, 151, 151, 0.1);
+$color-very-light-grey: #EBEBEB;
+$color-light-grey: #D8D8D8;
 $color-orange: #FFA640;
 
 // rwd
@@ -15,7 +19,7 @@ $bp-mini: 28.15em;  // 450
 
 // mixins
 @mixin style-box {
-  border: 1px solid $color-light-grey;
+  border: 1px solid $color-very-light-grey;
   background: $color-white;
   box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5);
   border-radius: 5px;

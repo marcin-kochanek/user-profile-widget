@@ -11,9 +11,9 @@ export default class AddComment extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='add-comment'>
         <form onSubmit={this.handleAddComment}>
-          <input type='text' name='comment' placeholder='Add a comment' />
+          <input className='add-comment__input' type='text' name='comment' placeholder='Add a comment' />
         </form>
       </div>
     );

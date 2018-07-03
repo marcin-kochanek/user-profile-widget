@@ -1,7 +1,7 @@
 .user-profile {
   position: relative;
   width: 50rem;
-  height: 80rem;
+  height: 83.5%;
   @include style-box;
 
   &::before {
@@ -24,24 +24,10 @@
 
   main {
     width: 46.6rem;
-    height: 56rem;
-    overflow: auto;
     position: relative;
     top: -5rem;
     transform: translateX(-50%);
     left: 50%;  
     @include style-box;
-
-      // &::-webkit-scrollbar {
-      //   width: 8px;
-      // }
-      
-      // &::-webkit-scrollbar-track {
-      //     border-radius: 10px;
-      // }
-      
-      // &::-webkit-scrollbar-thumb {
-      //     border-radius: 10px;
-      // }
-    }
+  }
 }

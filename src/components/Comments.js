@@ -15,29 +15,31 @@ export default class Comments extends React.Component {
   };
   render() {
     return (
-      <div>
-        <main>
-          <HideComments
-            handleHideComments={this.handleHideComments}
-            numberOfComments={this.props.comments.length}
-            isCommentsTableShown={this.state.isCommentsTableShown}
-          />
-          { this.state.isCommentsTableShown && this.props.comments.map((comment, index) => (
-              <Comment
-                key={index} 
-                author={comment.author}
-                authorPhoto={comment.authorPhoto}
-                date={comment.date}
-                commentText={comment.commentText}
-              />
-            ))
-          }
-        </main>
+      <main>
+        <HideComments
+          handleHideComments={this.handleHideComments}
+          numberOfComments={this.props.comments.length}
+          isCommentsTableShown={this.state.isCommentsTableShown}
+        />
+        <div className='comments-wrapper'>
+          <div className='comments-box'>
+            { this.state.isCommentsTableShown && this.props.comments.map((comment, index) => (
+                <Comment
+                  key={index} 
+                  author={comment.author}
+                  authorPhoto={comment.authorPhoto}
+                  date={comment.date}
+                  commentText={comment.commentText}
+                />
+              ))
+            }
+          </div>
+        </div>
         <AddComment 
           comments={this.props.comments}
           handleAddComment={this.props.handleAddComment}
         />
-      </div>
+      </main>
     );
   }
 }

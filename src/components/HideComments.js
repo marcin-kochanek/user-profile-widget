@@ -2,9 +2,8 @@ import React from 'react';
 
 const HideComments = (props) => (
   <div>
-    <button onClick={props.handleHideComments}>
+    <button className='btn btn--link' onClick={props.handleHideComments}>
       {`${props.isCommentsTableShown ? 'hide comments' : 'show comments'} (${props.numberOfComments})`}
-      {}
     </button>
   </div>
 );
