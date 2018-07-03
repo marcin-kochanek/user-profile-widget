@@ -11,6 +11,10 @@
 .comments-box {
   height: 100%;
   overflow-y: scroll;
+
+  // the trick: the browser treats the bottom like its the top (with the sorting function)
+  display: flex;
+  flex-direction: column-reverse;
   
   &::-webkit-scrollbar {
     width: 5px;

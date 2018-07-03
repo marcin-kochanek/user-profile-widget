@@ -31,15 +31,18 @@ export default class UserProfileApp extends React.Component {
     }); 
   };
   handleAddComment = (comment) => {
+    // the trick: the browser treats the bottom like its the top (with the sorting function)
     if (comment) {
       this.setState(prevState => ({
         comments: prevState.comments.concat({
           author: this.state.user.name,
           date: moment().local().format('YYYY-MM-DD HH:mm:ss'),
           commentText: comment
+        }).sort((firstComment, secondComment) => {
+          return (firstComment.date < secondComment.date ? 1 : -1); //reverse sorting with 
         })
       }));
-    }  
+    }
   };
   render() {
     return (

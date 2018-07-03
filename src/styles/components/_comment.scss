@@ -2,12 +2,13 @@
   padding: 3rem 0 2.5rem 2rem;
   border-bottom: 1px solid $color-very-light-grey;
 
+  // remember about the trick
   &:first-child {
-    padding-top: .5rem;
+    border-bottom: none;
   }
 
   &:last-child {
-    border-bottom: none;
+    padding-top: .5rem;
   }
 
   &__header {
